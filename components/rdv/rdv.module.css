@@ -1,0 +1,135 @@
+.item {
+  display: flex;
+  height: max-content;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 6px 1px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.item *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.imgContainer {
+  background-color: #fff;
+  border-right: 1px solid rgb(229, 229, 229);
+  padding: 20px;
+  flex: 1;
+  max-width: 263px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dataContainer {
+  flex: 3;
+}
+.name {
+  display: flex;
+  color: black;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  background-color: rgb(247, 247, 247);
+  justify-content: space-between;
+  align-items: center;
+}
+.name > div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.name a {
+  margin-top: 2px;
+  font-size: 14px;
+  color: rgb(151, 151, 151);
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  position: relative;
+  right: 5px;
+}
+.time > p:first-child {
+  border-right: 1px solid rgb(229, 229, 229);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-right: 10px;
+}
+.time > p:last-child {
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+  width: 70px;
+}
+.image {
+  max-height: 132px;
+  min-height: 132px;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.info {
+  padding: 15px;
+  background-color: white;
+}
+.info > p {
+  font-size: 13px;
+}
+.info > p:nth-child(2) {
+  color: rgb(150, 162, 170);
+  margin: 3px 0px 10px;
+}
+.info > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.deplacer {
+  display: flex;
+  padding: 0px 2px 0px 5px;
+  width: 128px;
+  height: 24px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.deplacer:hover,
+.annuler:hover {
+  opacity: 0.7;
+}
+.deplacer > span,
+.annuler > span {
+  margin-left: 5px;
+}
+.annuler {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 950px) {
+  .info {
+    padding: 10px 5px;
+  }
+  .name {
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 650px) {
+  .imgContainer {
+    display: none;
+  }
+}

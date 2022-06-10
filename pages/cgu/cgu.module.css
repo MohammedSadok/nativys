@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+.section * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  height: max-content;
+  scrollbar-width: none;
+}
+
+.global {
+  background-color: #fff;
+}
+.global1 {
+  margin-left: 13%;
+  margin-right: 13%;
+}
+.global > h1 {
+  margin-top: 80px;
+  padding-left: 64px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 64px;
+  margin-bottom: 8px;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  color: #0d0d0d;
+}
+.global1 > h3 {
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 700;
+  font-family: "Calibri", sans-serif;
+}
+.container {
+  font-family: "Calibri", sans-serif;
+  padding-top: 11px;
+  padding-bottom: 20px;
+}
+.container > p {
+  font-size: 18px;
+}
+.container1 {
+  font-family: "Calibri", sans-serif;
+  padding-top: 11px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #0d0d0d;
+}
+.container1 > p {
+  padding-bottom: 11px;
+}
+.container1 > ul {
+  padding-left: 40px;
+}
+.container1 > ul > li {
+  margin-left: 48px;
+}
+.firstP {
+  font-weight: 700;
+  padding: 0px;
+}
+.span {
+  color: #2e74b5;
+}
+.span1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.num {
+  font-size: 16px;
+  font-weight: 600;
+}
+.divTraitement {
+  padding-left: 52px;
+  padding-bottom: 11px;
+}
+.link {
+  color: #0056b3;
+  text-decoration: underline;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+}
+@media all and (max-width: 576px) {
+  .global1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 16px;
+  }
+  .global > h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .global1 > h2 {
+    font-size: 24px;
+  }
+}

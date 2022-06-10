@@ -1,0 +1,455 @@
+@font-face {
+  font-family: Swis721 Ex BT;
+  src: url('http://localhost:3000/fonts/swis-normal.ttf')  format('truetype');
+}
+@font-face {
+  font-family: MADE Evolve Sans EVO;
+  src: url('http://localhost:3000/fonts/evo-regular-bold.otf')  format('truetype');
+}
+.section * {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.header2>div>button {
+  color: #fff;
+  background-color: #d8c54e;
+  border-radius: 4px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+}
+.header2>div>button>a{
+color: #fff;
+text-decoration: none;
+}
+.header2>div>a {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Lato", Helvetica, sans-serif;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.span {
+  color: red;
+}
+
+.container {
+  background-image: url(https://nativys.com/images_site_web/etablissement/dp_mob.jpg);
+  background-size: cover;
+  background-position: -360px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.form {
+  background-color: #fff;
+  margin-left: 50%;
+  max-width: 545px;
+  padding: 30px;
+  border-radius: 4px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: 100%;
+  box-shadow: 3px 3px 24px 3px rgba(0, 0, 0, 0.11);
+}
+
+.form>div {
+  color: #484848;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+.a {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: "lato", Helvetica, sans-serif;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.div>label {
+  font-size: 16px;
+}
+
+.div>select {
+  padding: 12px;
+
+  border-radius: 4px;
+  border: 1px solid rgb(229, 229, 229);
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: inherit;
+  font-weight: 400;
+
+  transition: border-color 0.1s ease-out 0s;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  background-color: #d8c54e;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer>h3 {
+  color: #2f2f2f;
+  font-size: 22px;
+
+}
+
+.p {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.p>a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.section2 {
+  padding-top: 70px;
+  padding-bottom: 25px;
+  margin-top: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lato", Helvetica, sans-serif;
+  background-color: rgb(242, 242, 242);
+}
+
+.section2>p:nth-child(1)>span {
+  padding-left: 7px;
+}
+
+.section2>p {
+  margin-bottom: 10px;
+}
+
+.button>a {
+  color: white;
+  text-decoration: none;
+}
+
+.img1 {
+  background-image: url(https://nativys.com/images_site_web/etablissement/new/visibilite_en_ligne.jpg);
+  background-size: cover;
+  width: 318px;
+  height: 209px;
+  box-shadow: 1px 1px 12px #aaa;
+  border: 1px solid none;
+  border-radius: 5px;
+
+}
+
+.img2 {
+
+  background-image: url(https://nativys.com/images_site_web/etablissement/new/transformez_followers.jpg);
+  background-size: cover;
+  width: 318px;
+  height: 209px;
+  box-shadow: 1px 1px 12px #aaa;
+  border: 1px solid none;
+  border-radius: 5px;
+
+}
+
+.img3 {
+
+  background-image: url(https://nativys.com/images_site_web/etablissement/new/agenda_contecter.jpg);
+  background-size: cover;
+  width: 318px;
+  height: 209px;
+  box-shadow: 1px 1px 12px #aaa;
+  border: 1px solid none;
+  border-radius: 5px;
+
+}
+
+.img4 {
+
+  background-image: url(https://nativys.com/images_site_web/etablissement/new/faciliter_gestion.jpg);
+  background-size: cover;
+  width: 318px;
+  height: 209px;
+  box-shadow: 1px 1px 12px #aaa;
+  border: 1px solid none;
+  border-radius: 5px;
+
+}
+
+.img5 {
+
+  background-image: url(https://nativys.com/images_site_web/etablissement/new/gestion_salon.jpg);
+  background-size: cover;
+  width: 318px;
+  height: 209px;
+  box-shadow: 1px 1px 12px #aaa;
+  border: 1px solid none;
+  border-radius: 5px;
+
+}
+
+.avantages {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+
+  justify-content: center;
+  padding: 20px;
+}
+.logo{
+  font-weight: normal;
+  font-size: 18px;
+  text-anchor: middle;
+  font-family: Swis721 Ex BT;
+  color:#000;
+}
+.hr{
+ 
+ background-color: #d8c54e;
+ height: 1px;
+ border: none;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.divContainer {
+  background-color: rgb(242, 242, 242);
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.btnDiv {
+  text-align: center;
+}
+
+.liste {
+  list-style-type: none;
+  color: #2f2f2f;
+  font-family: "Lato", Helvetica, sans-serif;
+  width: 742px;
+}
+
+.liste>li {
+  margin-bottom: 12px;
+
+}
+
+.liste>li:nth-child(1) {
+  font-weight: bold;
+
+}
+
+.h2 {
+  text-align: center;
+  color: #2f2f2f;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+.liste>li>span {
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  color: #2f2f2f;
+}
+
+.title>p {
+  font-size: 14px;
+}
+
+.title>h3 {
+  font-size: 26px;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+.divMilieu {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: #2f2f2f;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+.global {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: rgb(242, 242, 242);
+}
+
+.divMilieu>div>p {
+
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.divMilieu>div>ul {
+
+  font-size: 18px;
+}
+
+.divMilieu>div>ul>li {
+  list-style-type: none;
+  padding-left: 6px;
+  padding-bottom: 12px;
+}
+
+.divMilieu>div:nth-child(2) {
+  padding-left: 50px;
+}
+
+.form1 {
+  display: none;
+}
+
+@media all and (max-width: 962px) {
+  .container1 {
+    height: 500px;
+    background-image: url(https://nativys.com/images_site_web/etablissement/dp_mob.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  .form {
+    display: none;
+  }
+
+  .form1 {
+    display: block;
+    background-color: #fff;
+    padding: 30px;
+    height: 100%;
+
+  }
+
+  .form1>div {
+    color: #484848;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Lato", Helvetica, sans-serif;
+  }
+
+  .headerLink {
+    display: none;
+  }
+
+  .section2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+
+  .section2>p:nth-child(1) {
+    justify-content: inherit;
+  }
+
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: none;
+  }
+
+  .img3 {
+    display: none;
+  }
+
+  .img4 {
+    display: none;
+  }
+
+  .img5 {
+    display: none;
+  }
+
+  .liste {
+    width: inherit;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .avantages {
+    justify-content: inherit;
+  }
+
+  .divMilieu {
+    flex-direction: column;
+  }
+
+  .global {
+    text-align: inherit;
+  }
+
+  .divMilieu>div:nth-child(2) {
+    padding-left: 0px;
+  }
+
+  .divMilieu>div>p {
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 550;
+    margin-bottom: 0px;
+  }
+
+  .divMilieu>div>ul>li {
+    padding-left: 50px;
+  }
+
+}

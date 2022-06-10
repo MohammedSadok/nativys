@@ -1,0 +1,28 @@
+.input {
+  display: flex;
+  align-items: center;
+}
+.input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(229, 229, 229);
+  outline: none;
+  background-color: white;
+  cursor: text;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: inherit;
+  font-weight: 400;
+  transition: border-color 0.1s ease-out 0s;
+}
+.icon {
+  position: relative;
+  right: 40px;
+  top: 2px;
+}
+.error{
+  color: red;
+  font-size: 0.7em;
+  width: max-content;
+}

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Lato&family=Mulish&family=Open+Sans&display=swap");
+.body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body{
+    margin-left: 40px;
+    padding-top: 30px;
+    padding-left: calc((100vw - 1300px)/2);
+}
+.main{
+  margin-top: 30px;
+  display: flex;
+  width: 93%;
+}
+.title{
+  margin-top: 20px;
+}
+.title h2 {
+
+  font-family: "Amaranth", sans-serif;
+  font-weight: 900;
+  line-height: 1.02;
+  font-size: 40px;
+  margin-top: 0.4%;
+}
+.title h3{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    color: #d8c54e;
+    font-family: 'Lora-Regular';
+}
+.btnContainer{
+  height: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.btnContainer>button{
+  background-color: #d8c54e;
+  height: 100%;
+  outline: 0;
+  color: white;
+  border: none;
+  width: 50px;
+}
+.btnContainer>button:first-child{
+  transform: rotate(180deg);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 1px;
+}
+.btnContainer>button:last-child{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

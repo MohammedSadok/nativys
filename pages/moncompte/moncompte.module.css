@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+.navBar {
+  margin-top: 50px;
+  width: max-content;
+  display: flex;
+  padding-left: 150px;
+  background-color: white;
+}
+.navBar > h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.active {
+  margin-right: 50px;
+  color: rgb(13, 13, 13);
+  text-align: center;
+  padding: 16px 0px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(13, 13, 13);
+}
+.nonActive {
+  margin-right: 50px;
+  color: rgb(151, 151, 151);
+  text-align: center;
+  padding: 16px 0px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  flex: 1 1 0%;
+}
+.main {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 2% 6%;
+  overflow-x: hidden;
+}
+.section > h4 {
+  margin: 0px 0px 15px;
+  font-weight: 400;
+}
+.section {
+  flex: 3 1 0%;
+}
+.aside {
+  flex: 1.3 1 0%;
+  display: block;
+  padding-left: 25px;
+  margin-left: 25px;
+  border-left: thin solid rgb(231, 231, 231);
+}
+.aside > h4 {
+  margin: 0px 0px 15px;
+  font-weight: 400;
+}
+@media (max-width: 1150px) {
+  .aside {
+    padding-left: 5px;
+    margin-left: 15px;
+    border: none;
+  }
+  .main {
+    padding: 1% 3%;
+  }
+}
+@media (max-width: 950px) {
+  .aside {
+    padding-left: 5px;
+    margin-left: 10px;
+    border: none;
+  }
+  .main {
+    padding: 1% 1%;
+  }
+}
+@media (max-width: 920px) {
+  .main {
+    display: block;
+    padding: 2% 6%;
+  }
+  .aside {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  .navBar {
+    padding-left: 50px;
+  }
+}
+.info {
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #f9f9f9;
+  justify-content: center;
+  align-items: center;
+}
+.info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.info > div {
+  width: 550px;
+  height: 614px;
+}
+.info > div > button {
+  font-family: "Lato", sans-serif;
+  border: 1px solid #d8c54e;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.29;
+  border-radius: 4px;
+  transition: all 0.3s ease-out 0s;
+  width: 80%;
+  height: 35px;
+  margin: 0 10%;
+}
+.info > div > button:hover {
+  background-color: #d8c54e;
+  color: rgb(255, 255, 255);
+}
+.cord,
+.pwd {
+  box-shadow: rgb(60 66 87 / 4%) 0px 0px 5px 0px,
+    rgb(0 0 0 / 4%) 0px 0px 10px 0px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px 15px;
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pwd {
+  flex-direction: column;
+  align-items: center;
+}
+.cord > input {
+  appearance: none;
+  width: 48%;
+  height: 42px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(229, 229, 229);
+  outline: none;
+  background-color: white;
+  cursor: text;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: inherit;
+  font-weight: 400;
+  transition: border-color 0.1s ease-out 0s;
+  margin: 10px 5px;
+}
+.pwd > p {
+  font-size: 14px;
+  color: rgb(151, 151, 151);
+  margin-bottom: 14px;
+}
+.password {
+  width: 80%;
+}
+.pwd > button {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.29;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 30px;
+  width: fit-content;
+  max-height: 42px;
+  min-height: 42px;
+  background-color: #d8c54e;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out 0s;
+}
+.pwd > button:hover {
+  opacity: 0.6;
+}
+.newPwd {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.newPwd > div {
+  width: 100%;
+  position: relative;
+  left: 15px;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  font-family: serif;
+}
+.btns > button:first-child {
+  border: 1px solid #d8c54e;
+  padding: 10px;
+  border-radius: 4px;
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btns > button:last-child {
+  background-color: #d8c54e;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+.btns > button:hover {
+  opacity: 0.7;
+}
+@media (max-width: 750px) {
+  .newPwd {
+    display: block;
+  }
+}
+@media (max-width: 550px) {
+  .newPwd {
+    display: block;
+  }
+  .cord,
+  .pwd {
+    margin-bottom: 20px;
+    padding: 10px 5px;
+  }
+  .cord {
+    display: block;
+  }
+  .cord > input {
+    width: 96%;
+  }
+}
+.loading {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+}

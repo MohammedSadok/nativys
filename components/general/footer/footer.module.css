@@ -1,0 +1,425 @@
+.globalDiv {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+.section1 {
+    background-color: #d8c54e !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroll {
+    color: #fff;
+    display: flex;
+
+}
+
+.section1>div:nth-child(1) {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 9%;
+}
+
+.menusvg>svg:nth-child(2) {
+    transform: rotate(-90deg);
+    display: none;
+
+}
+
+.section1>div:nth-child(1)>a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section1>div:nth-child(2) {
+    display: none;
+}
+
+
+.section2 {
+    background-color: #d8c54e;
+    margin-top: 30px;
+
+}
+
+
+.section2>ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+}
+
+.section2>ul>a {
+    color: white;
+    cursor: pointer;
+    font-family: Lato sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    width: max-content;
+
+
+}
+
+.section2>ul>a::after {
+    display: block;
+
+    content: "";
+    border-bottom: solid 2px white;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.section2>ul>a:hover::after {
+    transform: scaleX(1);
+}
+
+.span1 {
+    font-weight: normal;
+    font-size: 25px;
+    text-anchor: middle;
+    font-family: Swis721 Ex BT;
+    color: #fff
+}
+
+.span2 {
+    font-family: MADE Evolve Sans EVO;
+}
+
+.span3 {
+    color: #d5b705;
+    font-size: 25px;
+    font-family: Swis721 Ex BT;
+}
+
+.span4 {
+    font-weight: normal;
+    font-size: 25px;
+    text-anchor: middle;
+    font-family: Swis721 Ex BT;
+    color: #fff
+}
+
+.span5 {
+    text-transform: uppercase;
+    width: max-content;
+    font-size: 15px;
+    font-family: Lato sans-serif;
+    color: #fff;
+
+
+}
+
+.span5::after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px white;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+
+.span5:hover::after {
+    transform: scaleX(1);
+}
+
+.div1>div>ul>a {
+    text-decoration: none;
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.divContainer {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.coopyright {
+
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Lato sans-serif;
+}
+
+.menusvg {
+    display: none;
+}
+
+.svg {
+    display: none;
+
+}
+
+.svg1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.svg>a {
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+.install>div:nth-child(1) {
+    padding-left: 5px;
+}
+
+.divFooter1 {
+    display: flex;
+    flex-direction: row;
+    color: #FFF !important;
+    margin-top: 20px;
+    padding-left: 6%;
+
+}
+
+.divFooter>section:nth-child(2)>span {
+    text-transform: uppercase;
+    color: #FFF !important;
+}
+
+.divFooter>section:nth-child(2)>p>svg {
+    transform: rotate(-90deg);
+
+}
+
+.divFooter>section:nth-child(2) {
+    display: flex;
+    font-size: 12px;
+
+
+}
+
+.divFooter>section:nth-child(1) {
+    padding-top: 13px;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+
+
+}
+
+.section5 {
+    display: flex;
+    font-size: 12px;
+   
+
+}
+
+.section5>span:nth-child(1) {
+    font-size: 12px;
+}
+
+.divFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.span {
+    margin: 15px;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.globalDiv {
+    background-color: #d8c54e !important;
+
+}
+.Menu{
+cursor: pointer;
+}
+
+.langues {
+    display: flex;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    width: max-content;
+    padding-top: 5px;
+}
+.langues>svg{
+    padding-right: 5px;
+}
+
+.divLangue {
+    display: none;
+}
+
+@media all and (max-width: 1163px) {
+    .section1>div:nth-child(2) {
+        display: block;
+    }
+
+    .section4 {
+        display: none;
+    }
+
+    .svg {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    .svg>a {
+        padding-left: 10px;
+        margin-right: 20px;
+    }
+
+    .span {
+        width: 130px;
+    }
+
+    .svgUp {
+        position: relative;
+        right: 30px;
+    }
+
+    .divFooter {
+        flex-direction: column;
+
+    }
+
+    .divFooter>section {
+        justify-content: center;
+    }
+
+    .divFooter1 {
+        justify-content: space-between;
+    }
+}
+
+.dropDownList {
+    
+    display: none;
+    background-color: #FFFFFF;
+    color: #555;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    z-index: 1;
+  
+}
+
+.dropDownList div {
+    background-color: #ffffff;
+    z-index: 1;
+    padding: 0px 5px;
+    font-size: 16px;
+    list-style: none;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+.dropDownList a{
+    color: #555;
+    text-decoration: none;
+}
+.dropDownList li:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.dropDownList li:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.dropDownList li:hover {
+    background-color: #ddd;
+}
+
+@media all and (max-width: 1056px) {
+    .section1 {
+        border-bottom: 1.75px solid #fff;
+    }
+
+    .section2 {
+        margin-left: 7%;
+        display: none;
+    }
+
+    .section2>ul>a::after {
+        border-bottom: none;
+    }
+
+    .span5::after {
+        border-bottom: none;
+    }
+
+    .divContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divContainer>section:nth-child(1) {
+        border-bottom: 1.5px solid #fff;
+        padding: 20px;
+    }
+
+    .divContainer>section:nth-child(2) {
+        border-bottom: 1.5px solid #fff;
+        padding: 20px;
+    }
+
+    .divContainer>section:nth-child(3) {
+        border-bottom: 1.5px solid #fff;
+        padding: 20px;
+    }
+
+    .divFooter1 {
+        padding-top: 10px;
+
+    }
+
+    .divFooter1>div {
+        padding-left: 100px;
+    }
+
+    .span5 {
+        padding-left: 7%;
+    }
+
+    .menusvg {
+        display: block;
+
+    }
+
+    .menusvg>svg {
+        transform: rotate(90deg);
+    }
+
+    .menusvg1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .span {
+        width: 130px;
+    }
+
+
+}
+
+.sectionn {
+    height: 1000px;
+    background-color: #fff;
+}

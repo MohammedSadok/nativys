@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Swis721 Ex BT";
+  src: url("http://localhost:3000/fonts/swis-normal.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MADE Evolve Sans EVO";
+  src: url("http://localhost:3000/fonts/evo-regular-bold.otf")
+    format("truetype");
+}
+.main {
+  font-weight: normal;
+  font-size: 25px;
+  text-anchor: middle;
+  font-family: "Swis721 Ex BT";
+  color: #000;
+}
+.a {
+  font-family: "MADE Evolve Sans EVO";
+  font-size: 25px;
+}
+.t {
+  color: #d5b705;
+  font-size: 25px;
+  font-family: "Swis721 Ex BT";
+}
+.inner {
+  font-weight: normal;
+  font-size: 25px;
+  text-anchor: middle;
+  font-family: "Swis721 Ex BT";
+  color: #000;
+}

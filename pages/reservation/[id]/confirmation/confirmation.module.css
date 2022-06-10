@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+.main {
+  background-color: #f7f7f7;
+  flex-direction: column;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+.main * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  border-bottom: 1px solid #d3d3d3;
+  margin-top: 30px;
+  width: 800px;
+}
+.title > h1 {
+  font-family: serif;
+  font-weight: 900;
+  text-align: left;
+  font-size: 2.5rem;
+}
+.linkToLocation {
+  display: flex;
+  align-items: stretch;
+}
+.linkToLocation > a {
+  margin-left: 5px;
+  line-height: 1.29;
+  color: rgb(151, 151, 151);
+  font-size: 14px;
+  text-decoration: underline;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+}
+.rating > p {
+  color: #979797;
+  font-size: 12px;
+  margin: 0 0 3px 5px;
+}
+.ratingContainer {
+  display: flex;
+  align-items: baseline;
+  margin: 5px 0;
+  /* justify-content: baseline; */
+  /* background-color: red; */
+}
+.prestation {
+  padding-top: 20px;
+  width: 750px;
+}
+.prestation > h4 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.item {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(60 66 87 / 4%) 0px 0px 5px 0px,
+    rgb(0 0 0 / 4%) 0px 0px 10px 0px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item > p {
+  width: auto;
+}
+/* .select div{
+  width: max-content;
+} */
+.calender {
+  padding-top: 10px;
+  width: 750px;
+}
+.calender > h4 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.addPres {
+  background-color: #fff;
+  border: 1px solid #d8c54e;
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 12px 30px;
+  transition: all 0.3s ease-out 0s;
+  user-select: none;
+}
+.addPres:hover {
+  opacity: 0.7;
+}
+.addPres > svg {
+  margin-right: 10px;
+}
+.days {
+  display: flex;
+  border-bottom: 2px solid #979797;
+}
+.days > div {
+  display: flex;
+  flex: 1;
+}
+.days > button {
+  border: none;
+  background-color: inherit;
+  text-align: center;
+}
+.days > button > svg {
+  border: none;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+.days > div > div {
+  flex: 1;
+  text-align: center;
+  color: rgb(151, 151, 151);
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-size: 0.85rem;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.svgLeft {
+  transform: rotate(0.5turn);
+}
+.horaires {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.hours {
+  display: flex;
+  /* height: 500px; */
+  padding: 10px 30px;
+}
+.rowHour {
+  height: 100%;
+  flex: 1;
+}
+.hourItem {
+  text-align: center;
+}
+.noOccupe {
+  height: 30px;
+  color: #000;
+  font-size: 1.2em;
+  cursor: pointer;
+  font-weight: normal;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+}
+.occupe {
+  text-decoration: line-through;
+  height: 30px;
+  color: #000;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+}
+.noOccupe:hover {
+  border: 1px solid #d8c54e;
+  border-radius: 5px;
+}
+.identification {
+  width: 750px;
+}
+.identification > h4 {
+  margin: 10px 0;
+  font-weight: 500;
+}
+.form {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 4px 1px;
+  padding: 22px 29px 24px;
+}
+.formContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer > button {
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  padding: 12px 30px;
+  height: 42px;
+  background-color: #d8c54e;
+  color: #fff;
+  transition: all 0.3s ease-out 0s;
+}
+.formContainer > button:hover {
+  opacity: 0.7;
+}
+.formContainer > div {
+  width: 50%;
+}
+.formContainer > a {
+  text-decoration: underline;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.form > h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(151, 151, 151);
+  margin-bottom: 14px;
+}
+.minscrire {
+  margin: 20px 0;
+  padding: 30px 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750px;
+}
+.minscrire > a {
+  text-decoration: underline;
+}
+.modRdv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.modRdv > p {
+  font-size: 0.875rem;
+}
+.modRdv > button {
+  border: 1px solid #d8c54e;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: all 0.3s ease-out 0s;
+}
+.modRdv > button:hover {
+  opacity: 0.7;
+}
+.newPres {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newPres > button {
+  border: 1px solid #d8c54e;
+  background-color: #fff;
+  padding: 6px 9px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 3px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 5%;
+}
+.deleteSelect {
+  display: flex;
+  align-items: center;
+}
+.deleteSelect > button {
+  border: 1px solid #d8c54e;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fff ;
+  margin-left: 15px;
+  transition-duration: 300ms;
+}
+.deleteSelect > button:hover{
+  background-color: #d8c54e;
+  color: #fff;
+}
+.para{
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 22px;
+  margin-bottom: 42px;
+  width: 750px;
+}
