@@ -1,4 +1,4 @@
-import styles from "./inscrivezVous.module.css";
+import styles from "./inscrivez-etablissement.module.css";
 import Logo from "../../components/logo/Logo";
 import Input from "../../components/general/input/Input";
 import Footer from "../../components/general/footer/footer";
