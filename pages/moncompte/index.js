@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import getRDV from "../../services/getRDV";
 import deleteRDV from "../../services/deleteRDV";
 import Loading from "../../components/general/loading";
-const monCompte = () => {
+const MonCompte = () => {
   const router = useRouter();
   const [inputs, setInputs] = useState({
     password: "",
@@ -178,6 +178,7 @@ const monCompte = () => {
               reservations.rdv_venir.map((item) => {
                 return (
                   <RDV
+                    key={item.rdv_id}
                     id={item.rdv_id}
                     institut={item.institut.name}
                     image={item.institut.photo1}
@@ -206,6 +207,7 @@ const monCompte = () => {
               reservations.rdv_passer.map((item) => {
                 return (
                   <RdvPasser
+                    key={item.rdv_id}
                     id={item.rdv_id}
                     institut_id={item.institut.id}
                     institut={item.institut.name}
@@ -312,4 +314,4 @@ const monCompte = () => {
     </>
   );
 };
-export default monCompte;
+export default MonCompte;

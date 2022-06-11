@@ -4,7 +4,7 @@ import Section from "../components/home/section";
 import Articles from "../components/home/articles";
 import Prestation from "../components/home/prestations";
 import Footer from "../components/general/footer/footer";
-export default function () {
+export default function Header() {
   return (
     <div>
       <ul className={style.social}>
@@ -32,7 +32,6 @@ export default function () {
           <a
             target="”_blank”"
             href="https://play.google.com/store/apps/details?id=com.nativys.nativys"
-            class="entypo-githu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

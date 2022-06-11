@@ -394,9 +394,9 @@ export default function Register({ idInst, id }) {
                   </button>
                   <div>
                     {hours &&
-                      hours.horaires.map((elem) => {
+                      hours.horaires.map((elem, index) => {
                         return (
-                          <div>
+                          <div key={index}>
                             <p>{elem.day_name_min}.</p>
                             <p>
                               {elem.day_num} {elem.month}.
@@ -426,9 +426,9 @@ export default function Register({ idInst, id }) {
                     hours.horaires.map((elem) => {
                       return (
                         <div className={styles.rowHour}>
-                          {elem.hours.map((item) => {
+                          {elem.hours.map((item, index) => {
                             return (
-                              <div className={styles.hourItem}>
+                              <div className={styles.hourItem} key={index}>
                                 <button
                                   onClick={() => {
                                     setRdv({

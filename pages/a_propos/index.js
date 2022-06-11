@@ -64,7 +64,7 @@ export default function Apropos() {
             </p>
             <p>
               Nous avons également créé le{" "}
-              <a target="_blank" href="https://mag.nativys.com">
+              <a target="_blank" href="https://mag.nativys.com" rel="noopener">
                 blog professionnel Nativys Mag
               </a>
               , destiné à tous nos clients et partenaires. L’équipe Nativys,

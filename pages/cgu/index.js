@@ -561,31 +561,32 @@ export default function Cgu() {
               </p>
               <div className={classes.divTraitement}>
                 <div>
-                  <span className={classes.num}>i)&nbsp;</span> Lors de votre
-                  inscription sur notre Service pour créer et gérer votre
+                  <span className={classes.num}>i){"\u00A0"}</span> Lors de
+                  votre inscription sur notre Service pour créer et gérer votre
                   compte, vous faire bénéficier des fonctionnalités de notre
                   Site ;
                 </div>
                 <div>
-                  <span className={classes.num}>ii)&nbsp;</span> Pour le
+                  <span className={classes.num}>ii){"\u00A0"}</span> Pour le
                   traitement des informations de votre compte, la sécurité et la
                   maintenance du Site
                 </div>
                 <div>
-                  <span className={classes.num}>iii)&nbsp;</span> Pour vous
+                  <span className={classes.num}>iii){"\u00A0"}</span> Pour vous
                   informer de nouveautés concernant le Service ;{" "}
                 </div>
                 <div>
-                  <span className={classes.num}>iv)&nbsp;</span> Pour optimiser
-                  le fonctionnement et améliorer la qualité de notre Service ;{" "}
+                  <span className={classes.num}>iv){"\u00A0"}</span> Pour
+                  optimiser le fonctionnement et améliorer la qualité de notre
+                  Service ;{" "}
                 </div>
                 <div>
-                  <span className={classes.num}>v)&nbsp;</span> Pour envoyer à
-                  la demande du Prestataire chez qui vous avez pris rendez-vous
-                  des messages par SMS rédigés par lui ;{" "}
+                  <span className={classes.num}>v){"\u00A0"}</span> Pour envoyer
+                  à la demande du Prestataire chez qui vous avez pris
+                  rendez-vous des messages par SMS rédigés par lui ;{" "}
                 </div>
                 <div>
-                  <span className={classes.num}>vi)&nbsp;</span> Pour vous
+                  <span className={classes.num}>vi){"\u00A0"}</span> Pour vous
                   permettre de laisser un avis après une prestation chez un
                   Prestataire, et nous aider à améliorer la qualité de notre
                   Service.{" "}

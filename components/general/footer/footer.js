@@ -287,7 +287,11 @@ export default function Footer() {
                   <a href="cgu/">
                     <span>CGU</span>
                   </a>
-                  <a href="https://mag.nativys.com/" target="_blank">
+                  <a
+                    href="https://mag.nativys.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <span>MAG</span>
                   </a>
                 </ul>
@@ -411,6 +415,7 @@ export default function Footer() {
                 <a
                   href="https://apps.apple.com/fr/app/nativys/id1575398164"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     height="25px"
@@ -425,8 +430,9 @@ export default function Footer() {
             <div>
               <div>
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.nativys.nativys&amp;gl=MA"
+                  href={"https://play.google.com/store/apps/details?id=com.nativys.nativys&gl=MA"}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     height="40px"
@@ -516,20 +522,3 @@ export default function Footer() {
     </div>
   );
 }
-
-/*$(document).click(function(e) {
-	var myPopup = $('#popup2');
-	//$('#myPopup')[0].classList.toggle("show");
-	if (!myPopup.is(e.target) && myPopup.has(e.target).length === 0) 
-	{
-		if(myPopup.is(e.target)){
-		  alert('ok');
-			$('#myPopupWeb')[0].classList.add("show");
-		}else{
-			$('#myPopupWeb')[0].classList.remove("show");
-		}
-	}
-});
-function showLangueListWeb() {
-  $('#myPopupWeb')[0].classList.toggle("show");
-}*/
