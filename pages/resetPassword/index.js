@@ -1,4 +1,4 @@
-import styles from "./resetPassword.module.css";
+import styles from "./reset.module.css";
 import React, { useState } from "react";
 import Input from "../../components/general/input/Input";
 import Footer from "../../components/general/footer/footer";
