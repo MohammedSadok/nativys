@@ -4,7 +4,6 @@ import Input from "../../components/general/input/Input";
 import Footer from "../../components/general/footer/footer";
 import Header from "../../components/general/header/header";
 import resetPassword from "../../services/resetPassword";
-import Link from "next/link";
 export default function ResetPassword() {
   const [inputs, setInputs] = useState({
     email: "",

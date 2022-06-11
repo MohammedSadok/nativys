@@ -53,6 +53,7 @@ export default function Register({ idInst, id }) {
     if (isValid) {
       const rep = await login(inputs);
       setUser(rep.data);
+      localStorage.setItem("user", JSON.stringify(rep.data));
     }
   };
   function handleOnchange(event) {
@@ -235,7 +236,7 @@ export default function Register({ idInst, id }) {
       setHours(res1);
     };
     fetchData();
-  }, [id,idInst]);
+  }, [id, idInst]);
   return (
     <>
       <header>
@@ -423,9 +424,9 @@ export default function Register({ idInst, id }) {
                 </div>
                 <div className={styles.hours}>
                   {hours &&
-                    hours.horaires.map((elem,index) => {
+                    hours.horaires.map((elem, index) => {
                       return (
-                        <div className={styles.rowHour}key={index}>
+                        <div className={styles.rowHour} key={index}>
                           {elem.hours.map((item, index) => {
                             return (
                               <div className={styles.hourItem} key={index}>
@@ -547,11 +548,11 @@ export default function Register({ idInst, id }) {
           <p className={styles.para}>
             Merci de respecter le créneau qui vous a été réservé par notre
             partenaire. Nous savons bien que des imprévus arrivent. En cas
-            d&apos;empêchement, merci de prévenir l&apos;établissement dès que possible.
-            N&apos;hésitez pas à reprogrammer ou à annuler votre réservation via
-            NATIVYS. En cas de rendez-vous manqué sans annulation de votre part,
-            le partenaire peut vous notifier et vous bloquer pour des prochaines
-            réservations avec lui.
+            d&apos;empêchement, merci de prévenir l&apos;établissement dès que
+            possible. N&apos;hésitez pas à reprogrammer ou à annuler votre
+            réservation via NATIVYS. En cas de rendez-vous manqué sans
+            annulation de votre part, le partenaire peut vous notifier et vous
+            bloquer pour des prochaines réservations avec lui.
           </p>
         </main>
       )}
