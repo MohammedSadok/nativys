@@ -110,7 +110,7 @@ const MonCompte = () => {
       let arr = [];
       reservations.rdv_venir.forEach((item) => {
         if (item.rdv_id != id) {
-          newarr.push(item);
+          arr.push(item);
         }
       });
       setReservations((prev) => ({
@@ -146,7 +146,7 @@ const MonCompte = () => {
       {nav && (
         <main
           className={styles.main}
-          style={{ pointerEvents: modal.mod == 0 ? "auto" : "none" }}
+          style={{ pointerEvents: modal.mod == null ? "auto" : "none" }}
         >
           {modal.loading && (
             <div className={styles.loading}>
