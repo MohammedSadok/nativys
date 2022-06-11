@@ -134,7 +134,7 @@ export default function Check() {
               Envoyer
             </button>
             <a href="#" className={styles.sidentifier}>
-              S'identifier
+              S&apos;identifier
             </a>
           </div>
           <p>ou</p>

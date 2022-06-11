@@ -10,7 +10,7 @@ export default function QuestionFrequentes() {
         <div className={styles.global}>
           <h1>A propos de Nativys</h1>
           <div className={styles.global1}>
-            <h2>Qu'est ce que Nativys ?</h2>
+            <h2>Qu&apos;est ce que Nativys ?</h2>
             <p>
               NATIVYS est une startup marocaine fondée en 2021, qui fournit un
               service en ligne de prise de rendez-vous instantanée chez les
@@ -26,8 +26,8 @@ export default function QuestionFrequentes() {
             </p>
             <h2> Quels sont les avantages de Nativys ?</h2>
             <p>
-              Nativys vous garantit en plus d'une navigation simple et fluide,
-              une variété de services pour rendre l'expérience de réservation
+              Nativys vous garantit en plus d&apos;une navigation simple et fluide,
+              une variété de services pour rendre l&apos;expérience de réservation
               agréable :{" "}
             </p>
             <ul>
@@ -51,7 +51,7 @@ export default function QuestionFrequentes() {
                 clients.
               </li>
               <li>
-                Fin des oublis de rendez-vous avec l'option de l'envoie des SMS
+                Fin des oublis de rendez-vous avec l&apos;option de l&apos;envoie des SMS
                 de confirmation de rendez-vous directement aux clients.
               </li>
             </ul>
@@ -60,8 +60,8 @@ export default function QuestionFrequentes() {
               Les partenaires affichés sur la page Nativys sont des
               professionnels spécialisés dans le monde de la beauté et du bien
               être, sélectionnés selon des critères particuliers qui prend en
-              compte l'environnement, l'ambiance, la qualité des soins et la
-              propreté de l'établissement.
+              compte l&apos;environnement, l&apos;ambiance, la qualité des soins et la
+              propreté de l&apos;établissement.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function QuestionFrequentes() {
             </p>
             <ul>
               <li>
-                Allez y sur l'apple store ou le play store de votre smartphone
+                Allez y sur l&apos;apple store ou le play store de votre smartphone
                 et cherchez NATIVYS ensuite cliquez sur installer, ou consultez
                 le site Nativys.com.{" "}
               </li>
@@ -85,7 +85,7 @@ export default function QuestionFrequentes() {
                 utilisant le moteur de recherche
               </li>
               <li>
-                Une fois votre choix est fait, choisissez la date et l'horaire
+                Une fois votre choix est fait, choisissez la date et l&apos;horaire
                 qui vous conviennent ainsi que le mode de paiement désiré
               </li>
               <li>
@@ -104,25 +104,25 @@ export default function QuestionFrequentes() {
               Vous pouvez modifier ou annuler gratuitement votre réservation
               jusqu’à 24h avant l’heure de rendez-vous. C’est simple, vous
               pouvez le faire vous-même directement depuis votre compte dans la
-              partie ''Mes réservations''.
+              partie &apos;&apos;Mes réservations&apos;&apos;.
             </p>
             <p>Comment gérer un rendez-vous sur Nativys</p>
             <p>Gérer vos rendez-vous sur Nativys, c’est aussi simple : </p>
             <ul>
               <li>
                 {" "}
-                Cliquez sur l'icône ''Mon compte'' en haut de la page Nativys
+                Cliquez sur l&apos;icône &apos;&apos;Mon compte&apos;&apos; en haut de la page Nativys
               </li>
               <li> Renseignez votre email et votre mot de passe </li>
               <li>
                 La liste de vos rendez-vous apparaît ainsi qu’une liste de vos
                 rendez-vous passés. Cela vous indique tout ce que vous devez
-                savoir, y compris l'adresse du salon, les informations sur les
-                prestations, le membre de l'équipe avec lequel vous avez
+                savoir, y compris l&apos;adresse du salon, les informations sur les
+                prestations, le membre de l&apos;équipe avec lequel vous avez
                 réservé. Comme vous pouvez reprendre votre rendez-vous en
-                cliquant sur ''reprendre rendez-vous'' ou vous pouvez consulter
+                cliquant sur &apos;&apos;reprendre rendez-vous&apos;&apos; ou vous pouvez consulter
                 le chemin pour trouver votre établissement de beauté en allant
-                sur ''carte'' et vous suivez les orientations.{" "}
+                sur &apos;&apos;carte&apos;&apos; et vous suivez les orientations.{" "}
               </li>
             </ul>
             <h2> Comment puis-je savoir si mon rendez-vous est confirmé ? </h2>
@@ -139,14 +139,14 @@ export default function QuestionFrequentes() {
               de beauté directement chez votre professionnel de beauté en
               utilisant votre mode de paiement désiré.
             </p>
-            <h2> Où trouver l'adresse du salon ?</h2>
+            <h2> Où trouver l&apos;adresse du salon ?</h2>
             <p>
               Vous pouvez trouver l’adresse de votre salon sur votre page profil
               sur le site nativys.com avec une petite description du salon et un
-              lien vers Google map pour trouver facilement l'itinéraire. Comme
+              lien vers Google map pour trouver facilement l&apos;itinéraire. Comme
               vous pouvez trouver également l’adresse d’établissement indiquée
               dans votre SMS ou email de confirmation ou bien dans le détail de
-              votre réservation dans la rubrique "Mes réservations" sur votre
+              votre réservation dans la rubrique &quot;Mes réservations&quot; sur votre
               compte Nativys.
             </p>
             <h2> Où trouver le numéro de téléphone du salon ? </h2>
@@ -154,7 +154,7 @@ export default function QuestionFrequentes() {
               {" "}
               Vous pouvez trouver aussi le numéro de votre salon sur votre page
               profil sur le site nativys.com ainsi que dans le détail de de
-              votre réservation dans la rubrique " Mes réservations" sur votre
+              votre réservation dans la rubrique &quot; Mes réservations&quot; sur votre
               compte Nativys. Le numéro de téléphone est aussi mentionné sur
               votre sms et email de confirmation de rendez-vous.{" "}
             </p>
@@ -164,20 +164,20 @@ export default function QuestionFrequentes() {
             <h2>Comment donner un avis sur Nativys ?</h2>
             <p>
               {" "}
-              Vous voulez faire l'expérience de vous ? Les clients de Nativys
+              Vous voulez faire l&apos;expérience de vous ? Les clients de Nativys
               (et leur partenaires) ont aussi hâte de savoir ce que vous en avez
               pensé. Juste après votre rendez-vous, vous allez recevoir dans
               votre boite mail, un lien vous permettant de publier un avis
               concernant la prestation chez nos partenaires ainsi que la qualité
               d’accueil. L’avis peut également être lissé directement sur
-              l’espace ''Gérer mes RDV'' du site ou de l’application Nativys.
+              l’espace &apos;&apos;Gérer mes RDV&apos;&apos; du site ou de l’application Nativys.
             </p>
             <h2> Comment supprimer ou modifier un avis ? </h2>
             <p>
               Tant que votre avis n’a pas été modéré par le salon partenaire,
-              vous êtes en mesure de le modifier sur l’espace ''Gérer mes RDV''
+              vous êtes en mesure de le modifier sur l’espace &apos;&apos;Gérer mes RDV&apos;&apos;
               du site Nativys comme vous aurez la possibilité de le supprimer
-              définitivement (vous pouvez jeter un coup d'œil rapide à nos
+              définitivement (vous pouvez jeter un coup d&apos;œil rapide à nos
               Conditions Générales d’Utilisation relatives aux avis “CGU” pour
               plus d’informations).{" "}
             </p>
@@ -186,7 +186,7 @@ export default function QuestionFrequentes() {
               Chez Nativys, nous accordons une grande importance aux avis de nos
               clients, ces avis partagés amènent les autres clients à prendre la
               bonne décision, quel soin de beauté à réserver et quel employé
-              choisir. C'est également très utile pour nos salons de beauté
+              choisir. C&apos;est également très utile pour nos salons de beauté
               partenaires à améliorer continuellement leurs services. Alors
               allez-y, partagez votre expérience.
             </p>
@@ -195,16 +195,16 @@ export default function QuestionFrequentes() {
           <div className={styles.global1}>
             <h2> Comment créer un compte sur Nativys ?</h2>
             <p>
-              Cliquez sur l'icône en haut à droite de la page d’accueil Nativys.
+              Cliquez sur l&apos;icône en haut à droite de la page d’accueil Nativys.
               Vous pouvez créer votre compte en quelques secondes en renseignant
               les informations suivantes : nom, prénom, numéro de téléphone
               portable, email et un mot de passe valide. Un code vous sera
               envoyé, ce code permettra de valider la création de votre compte
               Nativys.
               <br /> Oups ! votre profil a été créé, vous pourrez désormais
-              commencer l'aventure.{" "}
+              commencer l&apos;aventure.{" "}
             </p>
-            <h2>Est-il nécessaire d'avoir un compte pour réserver ? </h2>
+            <h2>Est-il nécessaire d&apos;avoir un compte pour réserver ? </h2>
             <p>
               Oui, la création d’un compte sur Nativys est nécessaire, cela vous
               permettra de prendre des rendez-vous chez nos établissements de
@@ -226,7 +226,7 @@ export default function QuestionFrequentes() {
             <p>
               {" "}
               Pour supprimer votre compte Nativys, connectez-vous à votre compte
-              en cliquant sur "supprimer mon compte". Comme vous pouvez demander
+              en cliquant sur &quot;supprimer mon compte&quot;. Comme vous pouvez demander
               à Nativys de le faire au contact@nativys.com.{" "}
             </p>
             <p> Nous contacter </p>

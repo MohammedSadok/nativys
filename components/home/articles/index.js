@@ -1,13 +1,13 @@
 import styles from "./articles.module.css";
 import Article from "../article";
 import React, { useRef } from "react";
-import data from "./data";
+import DATA from "./data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 export default function Articles() {
   const slider = useRef(null);
-  const elements = data.map((elem) => {
+  const elements = DATA.map((elem) => {
     return (
       <Article
         key={elem.id}

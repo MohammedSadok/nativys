@@ -13,24 +13,26 @@ export default function HeaderHome() {
         <Link href={"/a_propos"}>Qui somme-nous ?</Link>
         <div className={styles.listContainer}>
           <div>
-            <Link href={"/" + "coiffeurs"} key={"coiffeurs"}>
+            <Link href={"/coiffeurs"} key={"coiffeurs"}>
               Coiffeurs
             </Link>
             <Link
-              href={"/" + "instituts_de_beaute"}
+              href={"/instituts_de_beaute"}
               key={"instituts_de_beaute"}
             >
               institus de beauté
             </Link>
-            <Link href={"/" + "barbiers"} key={"barbiers"}>
+            <Link href={"/barbiers"} key={"barbiers"}>
               barbiers
             </Link>
-            <Link href={"/" + "spa"} key={"spa"}>
+            <Link href={"/spa"} key={"spa"}>
               spa
             </Link>
           </div>
           <div>
-            <a href="#">ajouter votre établissement</a>
+            <Link href={"/inscrivez-etablissement"}>
+              ajouter votre établissement
+            </Link>
             <Link href={"/moncompte"}>mon compte</Link>
           </div>
         </div>
@@ -46,23 +48,25 @@ export default function HeaderHome() {
           <nav className={styles.navbar}>
             <a>Qui somme-nous ?</a>
             <div className={styles.nav_nav}>
-              <Link href={"/" + "coiffeurs"} key={"coiffeurs"}>
+              <Link href={"/coiffeurs"} key={"coiffeurs"}>
                 Coiffeurs
               </Link>
               <Link
-                href={"/" + "instituts_de_beaute"}
+                href={"/instituts_de_beaute"}
                 key={"instituts_de_beaute"}
               >
                 institus de beauté
               </Link>
-              <Link href={"/" + "barbiers"} key={"barbiers"}>
+              <Link href={"/barbiers"} key={"barbiers"}>
                 barbiers
               </Link>
-              <Link href={"/" + "spa"} key={"spa"}>
+              <Link href={"/spa"} key={"spa"}>
                 spa
               </Link>
             </div>
-            <a href="/InscrivezVous">Inscrivez votre établissement</a>
+            <Link href={"/inscrivez-etablissement"}>
+              <a>Inscrivez votre établissement</a>
+            </Link>
           </nav>
         </div>
         <div className={styles.icons}>

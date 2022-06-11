@@ -8,7 +8,7 @@ export default function Cgu() {
       <Header />
       <div className={styles.section} id="main">
         <div className={classes.global}>
-          <h1>Conditions générales d'utilisation</h1>
+          <h1>Conditions générales d&apos;utilisation</h1>
           <div className={classes.global1}>
             <h3 className={classes.h3}>Article 1 - Identification</h3>
             <div className={classes.container}>
@@ -453,7 +453,7 @@ export default function Cgu() {
                 automatiquement.{" "}
               </p>
               <p className={classes.firstP}>
-                8.3 Liste de motifs de refus d'un avis{" "}
+                8.3 Liste de motifs de refus d&apos;un avis{" "}
               </p>
               <p>La liste des motifs de refus est la suivante : </p>
               <p>
@@ -516,11 +516,11 @@ export default function Cgu() {
                 11.1 Données personnelles collectées{" "}
               </p>
               <p>
-                Les « Données Personnelles » constituent l'ensemble des
+                Les « Données Personnelles » constituent l&apos;ensemble des
                 informations permettant de vous identifier directement ou
                 indirectement. En d’autres termes, il s’agit de toutes les
                 informations identifiantes que vous nous fournirez
-                volontairement lors de l'ouverture d'un compte utilisateur sur
+                volontairement lors de l&apos;ouverture d&apos;un compte utilisateur sur
                 notre service ou qui seront collectées dans le cadre de votre
                 utilisation de notre Site (par exemple votre nom, numéro de
                 téléphone ou encore votre adresse IP).{" "}
@@ -602,8 +602,8 @@ export default function Cgu() {
               </p>
               <p>
                 Vos Données Personnelles pourront uniquement être divulguées en
-                application d'une loi, d'un règlement ou en vertu d'une décision
-                d'une autorité réglementaire ou judiciaire compétente.{" "}
+                application d&apos;une loi, d&apos;un règlement ou en vertu d&apos;une décision
+                d&apos;une autorité réglementaire ou judiciaire compétente.{" "}
               </p>
               <p className={classes.firstP}>11.4 Sécurité des données </p>
               <p>
@@ -623,7 +623,7 @@ export default function Cgu() {
               <p className={classes.firstP}>11.5 Conservation des données </p>
               <p>
                 Vos Données Personnelles sont stockées sur nos serveurs et sont
-                conservées pour la durée strictement nécessaire à l'utilisation
+                conservées pour la durée strictement nécessaire à l&apos;utilisation
                 de votre compte. A compter de la désactivation ou de la
                 suppression de votre compte, les informations et Données
                 Personnelles associés seront conservées pendant une durée de
@@ -643,7 +643,7 @@ export default function Cgu() {
               </p>
               <p>
                 Conformément à la loi informatique et libertés, vous disposez
-                d'un droit d'accès, de rectification, de mise à jour, de
+                d&apos;un droit d&apos;accès, de rectification, de mise à jour, de
                 portabilité de suppression, et d’opposition aux traitements de
                 vos Données Personnelles ainsi que du droit de définir des
                 directives relatives au sort de vos données après votre décès.{" "}
@@ -651,7 +651,7 @@ export default function Cgu() {
               <p>
                 Toute demande d’exercice de l’un de ces droits peut être
                 adressée par courrier électronique à contact@NATIVYS.com, et/ou
-                par courrier à l'adresse suivante : NATIVYS 38 Rue 32
+                par courrier à l&apos;adresse suivante : NATIVYS 38 Rue 32
                 Lotissement Oued Fès, 30090 Fès.{" "}
               </p>
               <p>
@@ -662,6 +662,7 @@ export default function Cgu() {
                 </span>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="http://www.khidmat-almostahlik.ma/portal/"
                   className={classes.link}
                 >
@@ -689,8 +690,8 @@ export default function Cgu() {
                 • Cookies strictement nécessaires Ces Cookies sont nécessaires
                 pour que le site Internet fonctionne et ne peuvent pas être
                 désactivés, le Service ne peut pas fonctionner correctement sans
-                eux. L’Utilisateur peut configurer son navigateur pour qu'il
-                bloque ou avertisse de l'existence de ces cookies, mais dans ce
+                eux. L’Utilisateur peut configurer son navigateur pour qu&apos;il
+                bloque ou avertisse de l&apos;existence de ces cookies, mais dans ce
                 cas certaines parties du Service ne fonctionneront pas.{" "}
               </p>
               <p>

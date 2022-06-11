@@ -63,7 +63,7 @@ export default function Login() {
         }}
       >
         <div className={styles.container}>
-          <h3 className={styles.h3}>S'identifier avec un profil existant </h3>
+          <h3 className={styles.h3}>S&apos;identifier avec un profil existant </h3>
 
           <div className={styles.form}>
             <h3>Merci de vous identifier pour accéder à votre compte </h3>
@@ -100,7 +100,7 @@ export default function Login() {
             />
 
             <button className={styles.btn} onClick={validate}>
-              je m'identifie
+              je m&apos;identifie
             </button>
 
             <div className={styles.divmotdepasse}>

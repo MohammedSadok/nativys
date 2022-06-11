@@ -22,7 +22,7 @@ export const getServerSideProps = async (context) => {
 };
 export default function Register({ idInst, id }) {
   const router = useRouter();
-  let link;
+  const link = useRef();
   const [counter, setCounter] = useState(0);
   const [value, setValue] = useState(null);
   const [hours, setHours] = useState(null);
@@ -182,7 +182,7 @@ export default function Register({ idInst, id }) {
       if (saved !== null && JSON.parse(saved).id == idInst) {
         const data = JSON.parse(saved);
         setValue(data);
-        link =
+        link.current =
           "https://www.google.com/maps/search/?api=1&query=" +
           data.latitude +
           "," +
@@ -201,7 +201,7 @@ export default function Register({ idInst, id }) {
         const response = await getOneInstitut(idInst);
         // console.log(response.data.institut.categories[0].prestations);
         setValue(response.data.institut);
-        link =
+        link.current =
           "https://www.google.com/maps/search/?api=1&query=" +
           response.data.institut.latitude +
           "," +
@@ -235,7 +235,7 @@ export default function Register({ idInst, id }) {
       setHours(res1);
     };
     fetchData();
-  }, []);
+  }, [id,idInst]);
   return (
     <>
       <header>
@@ -259,7 +259,7 @@ export default function Register({ idInst, id }) {
                     d="M11.989 12c.416 0 .803-.1 1.16-.3.356-.201.638-.47.847-.806.208-.336.312-.705.312-1.105 0-.401-.104-.773-.312-1.117a2.275 2.275 0 0 0-.848-.816c-.356-.2-.743-.3-1.16-.3a2.3 2.3 0 0 0-1.984 1.116 2.116 2.116 0 0 0-.312 1.117c0 .615.223 1.137.67 1.567.445.43.988.644 1.627.644zM12 4c1.1 0 2.11.252 3.03.757a5.887 5.887 0 0 1 2.166 2.037c.536.867.804 1.818.804 2.853 0 .79-.206 1.695-.619 2.717-.357.867-.852 1.659-1.484 2.668a37.066 37.066 0 0 1-1.794 2.503 30.562 30.562 0 0 1-1.484 1.786L12 20l-.619-.68a30.562 30.562 0 0 1-1.484-1.785 37.066 37.066 0 0 1-1.794-2.503c-.632-1.009-1.127-1.801-1.484-2.668C6.206 11.342 6 10.436 6 9.647c0-1.035.268-1.986.804-2.853A5.887 5.887 0 0 1 8.97 4.757 6.205 6.205 0 0 1 12 4z"
                   ></path>
                 </svg>
-                <a href={link}>{value.adresse}</a>
+                <a href={link.current}>{value.adresse}</a>
               </div>
               <div className={styles.rating}>
                 <Rating
@@ -278,7 +278,7 @@ export default function Register({ idInst, id }) {
             {prestation[0] != null &&
               prestation.map((item, index) => {
                 return (
-                  <div className={styles.item}>
+                  <div className={styles.item} key={index}>
                     <p>{item.text}</p>
                     <div className={styles.select}>
                       <div className={styles.deleteSelect}>
@@ -423,9 +423,9 @@ export default function Register({ idInst, id }) {
                 </div>
                 <div className={styles.hours}>
                   {hours &&
-                    hours.horaires.map((elem) => {
+                    hours.horaires.map((elem,index) => {
                       return (
-                        <div className={styles.rowHour}>
+                        <div className={styles.rowHour}key={index}>
                           {elem.hours.map((item, index) => {
                             return (
                               <div className={styles.hourItem} key={index}>
@@ -508,14 +508,14 @@ export default function Register({ idInst, id }) {
                       name={"password"}
                       value={inputs.password}
                     />
-                    <button onClick={validate}>je m'edentifie</button>
+                    <button onClick={validate}>je m&apos;edentifie</button>
                     <a href="#">Mot de pass oublie ?</a>
                   </div>
                 </div>
               </div>
               <div className={styles.minscrire}>
                 <Link href="/register">
-                  <a href="#">Je m'inscrire</a>
+                  <a href="#">Je m&apos;inscrire</a>
                 </Link>
               </div>
             </>
@@ -547,8 +547,8 @@ export default function Register({ idInst, id }) {
           <p className={styles.para}>
             Merci de respecter le créneau qui vous a été réservé par notre
             partenaire. Nous savons bien que des imprévus arrivent. En cas
-            d'empêchement, merci de prévenir l'établissement dès que possible.
-            N'hésitez pas à reprogrammer ou à annuler votre réservation via
+            d&apos;empêchement, merci de prévenir l&apos;établissement dès que possible.
+            N&apos;hésitez pas à reprogrammer ou à annuler votre réservation via
             NATIVYS. En cas de rendez-vous manqué sans annulation de votre part,
             le partenaire peut vous notifier et vous bloquer pour des prochaines
             réservations avec lui.

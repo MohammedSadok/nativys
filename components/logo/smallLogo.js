@@ -5,7 +5,7 @@ function LogoSmall(props) {
   return (
     <>
       <div
-        itemtype="https://schema.org/Organization"
+        itemType="https://schema.org/Organization"
         style={{ width: "100px" }}
       >
         <Link href="/">

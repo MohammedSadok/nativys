@@ -1,5 +1,5 @@
 import styles from "../../../styles/reservation.module.css";
-import  Header  from "../../../components/general/header/header";
+import Header from "../../../components/general/header/header";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -33,14 +33,14 @@ const Reservation = ({ id }) => {
   const [loading, setLoading] = useState(false);
   const divRef = useRef(null);
   const divRef2 = useRef(null);
-  let link = null;
+  let link = useRef();
   useEffect(() => {
     const fetchData = async () => {
       const saved = localStorage.getItem("institue");
       if (saved != null && JSON.parse(saved).id == id) {
         const data = JSON.parse(saved);
         setValue(data);
-        link =
+        link.current =
           "https://www.google.com/maps/search/?api=1&query=" +
           data.latitude +
           "," +
@@ -53,10 +53,10 @@ const Reservation = ({ id }) => {
           data.photo5,
         ]);
       } else {
-        console.log("not saved")
+        console.log("not saved");
         const response = await getOneInstitut(id);
         setValue(response.data.institut);
-        link =
+        link.current =
           "https://www.google.com/maps/search/?api=1&query=" +
           response.data.institut.latitude +
           "," +
@@ -79,7 +79,7 @@ const Reservation = ({ id }) => {
       setTemp(true);
     }, 300);
     return () => clearTimeout(timer);
-  }, []);
+  }, [id]);
   const slider = useRef(null);
   const settings = {
     dots: true,
@@ -138,7 +138,7 @@ const Reservation = ({ id }) => {
                       d="M11.989 12c.416 0 .803-.1 1.16-.3.356-.201.638-.47.847-.806.208-.336.312-.705.312-1.105 0-.401-.104-.773-.312-1.117a2.275 2.275 0 0 0-.848-.816c-.356-.2-.743-.3-1.16-.3a2.3 2.3 0 0 0-1.984 1.116 2.116 2.116 0 0 0-.312 1.117c0 .615.223 1.137.67 1.567.445.43.988.644 1.627.644zM12 4c1.1 0 2.11.252 3.03.757a5.887 5.887 0 0 1 2.166 2.037c.536.867.804 1.818.804 2.853 0 .79-.206 1.695-.619 2.717-.357.867-.852 1.659-1.484 2.668a37.066 37.066 0 0 1-1.794 2.503 30.562 30.562 0 0 1-1.484 1.786L12 20l-.619-.68a30.562 30.562 0 0 1-1.484-1.785 37.066 37.066 0 0 1-1.794-2.503c-.632-1.009-1.127-1.801-1.484-2.668C6.206 11.342 6 10.436 6 9.647c0-1.035.268-1.986.804-2.853A5.887 5.887 0 0 1 8.97 4.757 6.205 6.205 0 0 1 12 4z"
                     ></path>
                   </svg>
-                  <a href={link}>{value.adresse}</a>
+                  <a href={link.current}>{value.adresse}</a>
                 </div>
                 <div className={styles.rating}>
                   <Rating
@@ -181,6 +181,7 @@ const Reservation = ({ id }) => {
                   let count = 0;
                   return (
                     <img
+                      alt={item}
                       key={count}
                       src={`https://nativys.com/image-get/${item}`}
                       className={styles.image}
@@ -228,7 +229,7 @@ const Reservation = ({ id }) => {
           </div>
           <div className={styles.reserve} ref={divRef2}>
             <h1>
-              Faites le choix d'être dans de bonnes mains chez {value.name}
+              Faites le choix d&apos;être dans de bonnes mains chez {value.name}
             </h1>
             <div className={styles.dataContainer}>
               <section>
@@ -246,7 +247,7 @@ const Reservation = ({ id }) => {
               </section>
               <aside>
                 <div className={styles.hours}>
-                  <h3>HORAIRES D'OUVERTURES</h3>
+                  <h3>HORAIRES D&apos;OUVERTURES</h3>
                   <ul>
                     {value &&
                       value.heure_ouvertures.map((item) => {
@@ -265,7 +266,7 @@ const Reservation = ({ id }) => {
             </div>
           </div>
           <footer className={styles.footer} ref={divRef}>
-            <h3>Plus d'informations sur {value.name}</h3>
+            <h3>Plus d&apos;informations sur {value.name}</h3>
             <div className={styles.mapContainer}>
               <div className={styles.map}>
                 <LoadScript googleMapsApiKey="AIzaSyBLFEpEUu-hhvrAkRuOBn80uwOPhgGNSAs">
@@ -391,9 +392,9 @@ const Reservation = ({ id }) => {
                   d="M11.989 12c.416 0 .803-.1 1.16-.3.356-.201.638-.47.847-.806.208-.336.312-.705.312-1.105 0-.401-.104-.773-.312-1.117a2.275 2.275 0 0 0-.848-.816c-.356-.2-.743-.3-1.16-.3a2.3 2.3 0 0 0-1.984 1.116 2.116 2.116 0 0 0-.312 1.117c0 .615.223 1.137.67 1.567.445.43.988.644 1.627.644zM12 4c1.1 0 2.11.252 3.03.757a5.887 5.887 0 0 1 2.166 2.037c.536.867.804 1.818.804 2.853 0 .79-.206 1.695-.619 2.717-.357.867-.852 1.659-1.484 2.668a37.066 37.066 0 0 1-1.794 2.503 30.562 30.562 0 0 1-1.484 1.786L12 20l-.619-.68a30.562 30.562 0 0 1-1.484-1.785 37.066 37.066 0 0 1-1.794-2.503c-.632-1.009-1.127-1.801-1.484-2.668C6.206 11.342 6 10.436 6 9.647c0-1.035.268-1.986.804-2.853A5.887 5.887 0 0 1 8.97 4.757 6.205 6.205 0 0 1 12 4z"
                 ></path>
               </svg>
-              <a href={link}>{value.adresse}</a>
+              <a href={link.current}>{value.adresse}</a>
             </footer>
-            <p className={styles.description}>"{value.description}"</p>
+            <p className={styles.description}>&quot;{value.description}&quot;</p>
           </footer>
         </main>
       </div>

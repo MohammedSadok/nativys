@@ -46,7 +46,7 @@ const MonCompte = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [router]);
   const validate = async () => {
     let isValid = true;
     if (!inputs.password) {

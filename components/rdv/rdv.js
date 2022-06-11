@@ -5,6 +5,7 @@ const RDV = (props) => {
     <div className={styles.item}>
       <div className={styles.imgContainer}>
         <img
+          alt={props.image}
           src={`https://nativys.com/image-get/${props.image}`}
           className={styles.image}
         />
@@ -30,7 +31,7 @@ const RDV = (props) => {
             </a>
           </div>
           <div className={styles.time}>
-            <p>{props.hour.heure+":"+props.hour.minute}</p>
+            <p>{props.hour.heure + ":" + props.hour.minute}</p>
             <p>
               {props.date.day +
                 " " +

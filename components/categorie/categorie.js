@@ -26,7 +26,7 @@ export default function Categorie(props) {
                     <span>{item.prix_ttc} MAD</span>
                   ) : (
                     <span>
-                      àpartir de {item.a_partir_de} MAD Jusqu'à {item.jusqu_a}{" "}
+                      àpartir de {item.a_partir_de} MAD Jusqu&apos;à {item.jusqu_a}{" "}
                       MAD
                     </span>
                   )}
@@ -80,7 +80,7 @@ export default function Categorie(props) {
                           <span>{item.prix_ttc} MAD</span>
                         ) : (
                           <span>
-                            àpartir de {item.a_partir_de} MAD Jusqu'à{" "}
+                            àpartir de {item.a_partir_de} MAD Jusqu&apos;à{" "}
                             {item.jusqu_a} MAD
                           </span>
                         )}

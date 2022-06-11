@@ -2,6 +2,7 @@ import styles from "./inscrivezVous.module.css";
 import Logo from "../../components/logo/Logo";
 import Input from "../../components/general/input/Input";
 import Footer from "../../components/general/footer/footer";
+import Link from "next/link";
 function scroll() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -59,20 +60,20 @@ export default function inscrivezVous() {
                 data-custom-type="METIER"
               >
                 <option value="gerant_salon">
-                  Gérant d'un salon de coiffure{" "}
+                  Gérant d&apos;un salon de coiffure{" "}
                 </option>
                 <option value="gerant_institut">
-                  Gérant d'un institut de beauté{" "}
+                  Gérant d&apos;un institut de beauté{" "}
                 </option>
-                <option value="barbier">Gérant d'un barbershop </option>
+                <option value="barbier">Gérant d&apos;un barbershop </option>
                 <option value="creation">
                   En train de créer mon activité{" "}
                 </option>
                 <option value="salarie">
-                  Je suis salarié / apprenti d'un établissement de beauté{" "}
+                  Je suis salarié / apprenti d&apos;un établissement de beauté{" "}
                 </option>
                 <option value="gerant_salon_domicile">
-                  Gérant d'un salon à domicile{" "}
+                  Gérant d&apos;un salon à domicile{" "}
                 </option>
 
                 <option value="professionnel_beaute_domicile">
@@ -80,8 +81,8 @@ export default function inscrivezVous() {
                 </option>
 
                 <option value="salarie1">
-                  Salarié / apprenti d'un établissement de beauté d'un salon /
-                  institut{" "}
+                  Salarié / apprenti d&apos;un établissement de beauté d&apos;un
+                  salon / institut{" "}
                 </option>
 
                 <option value="professionnel_beaute">
@@ -89,7 +90,7 @@ export default function inscrivezVous() {
                 </option>
 
                 <option value="professionnel_beaute">
-                  Gérant(e) d'un centre de spa{" "}
+                  Gérant(e) d&apos;un centre de spa{" "}
                 </option>
 
                 <option value="autre">Autre </option>
@@ -111,9 +112,11 @@ export default function inscrivezVous() {
               </select>
             </div>
             <div className={styles.footer}>
-              <a href="/" className={styles.a}>
-                je souhaite prendre un rendez-vous beauté sur nativys.com
-              </a>
+              <Link href="/coiffeurs">
+                <a className={styles.a}>
+                  je souhaite prendre un rendez-vous beauté sur nativys.com
+                </a>
+              </Link>
 
               <button className={styles.button}>
                 <a>Obtenir une demo gratuite</a>
@@ -121,11 +124,11 @@ export default function inscrivezVous() {
               <p className={styles.p}>
                 En cliquant sur ce button vous acceptez{" "}
                 <a href="https://nativys.com/fr/cgu">
-                  nos conditions générales d'utilisation.
+                  nos conditions générales d&apos;utilisation.
                 </a>
               </p>
               <h3>
-                Plus d'informations: <span>+212 08 08 57 17 02</span>
+                Plus d&apos;informations: <span>+212 08 08 57 17 02</span>
               </h3>
             </div>
           </form>
@@ -170,18 +173,18 @@ export default function inscrivezVous() {
               data-custom-type="METIER"
             >
               <option value="gerant_salon">
-                Gérant d'un salon de coiffure{" "}
+                Gérant d&apos;un salon de coiffure{" "}
               </option>
               <option value="gerant_institut">
-                Gérant d'un institut de beauté{" "}
+                Gérant d&apos;un institut de beauté{" "}
               </option>
-              <option value="barbier">Gérant d'un barbershop </option>
+              <option value="barbier">Gérant d&apos;un barbershop </option>
               <option value="creation">En train de créer mon activité </option>
               <option value="salarie">
-                Je suis salarié / apprenti d'un établissement de beauté{" "}
+                Je suis salarié / apprenti d&apos;un établissement de beauté{" "}
               </option>
               <option value="gerant_salon_domicile">
-                Gérant d'un salon à domicile{" "}
+                Gérant d&apos;un salon à domicile{" "}
               </option>
 
               <option value="professionnel_beaute_domicile">
@@ -189,8 +192,8 @@ export default function inscrivezVous() {
               </option>
 
               <option value="salarie1">
-                Salarié / apprenti d'un établissement de beauté d'un salon /
-                institut{" "}
+                Salarié / apprenti d&apos;un établissement de beauté d&apos;un
+                salon / institut{" "}
               </option>
 
               <option value="professionnel_beaute">
@@ -198,7 +201,7 @@ export default function inscrivezVous() {
               </option>
 
               <option value="professionnel_beaute">
-                Gérant(e) d'un centre de spa{" "}
+                Gérant(e) d&apos;un centre de spa{" "}
               </option>
 
               <option value="autre">Autre </option>
@@ -221,9 +224,11 @@ export default function inscrivezVous() {
             </select>
           </div>
           <div className={styles.footer}>
-            <a href="/" className={styles.a}>
-              je souhaite prendre un rendez-vous beauté sur nativys.com
-            </a>
+            <Link href="/coiffeurs">
+              <a className={styles.a}>
+                je souhaite prendre un rendez-vous beauté sur nativys.com
+              </a>
+            </Link>
 
             <button className={styles.button}>
               <a>Obtenir une demo gratuite</a>
@@ -231,11 +236,11 @@ export default function inscrivezVous() {
             <p className={styles.p}>
               En cliquant sur ce button vous acceptez{" "}
               <a href="https://nativys.com/fr/cgu">
-                nos conditions générales d'utilisation.
+                nos conditions générales d&apos;utilisation.
               </a>
             </p>
             <h3>
-              Plus d'informations: <span>+212 08 08 57 17 02</span>
+              Plus d&apos;informations: <span>+212 08 08 57 17 02</span>
             </h3>
           </div>
         </form>
@@ -270,7 +275,7 @@ export default function inscrivezVous() {
                 </li>
                 <li>
                   <span>50% des rdv</span> pris en dehors des horaires
-                  d'ouverture
+                  d&apos;ouverture
                 </li>
                 <li>Rappelles automatiques des RDV par SMS</li>
                 <li>
@@ -294,7 +299,7 @@ export default function inscrivezVous() {
                   connecté
                 </li>
                 <li>
-                  Fidélisez vos clients à l'aide de{" "}
+                  Fidélisez vos clients à l&apos;aide de{" "}
                   <span>campagnes sms ciblées</span>
                 </li>
               </ul>
@@ -336,7 +341,7 @@ export default function inscrivezVous() {
                   cadeaux...en quelques clics !
                 </li>
                 <li>
-                  Suivez votre activité et votre performance à l'aide des
+                  Suivez votre activité et votre performance à l&apos;aide des
                   analyses et statiques avancés
                 </li>
               </ul>
@@ -347,7 +352,9 @@ export default function inscrivezVous() {
           <div className={styles.avantages}>
             <div>
               <ul className={styles.liste}>
-                <li>Une gestion de vitre salon n'a jamais été aussi simple</li>
+                <li>
+                  Une gestion de vitre salon n&apos;a jamais été aussi simple
+                </li>
                 <li>Plateforme accessible depuis : web,tablette et mobile</li>
                 <li>
                   Nos experts NATIVYS vous accompagne pour vous former et régler
@@ -369,7 +376,7 @@ export default function inscrivezVous() {
 
       <div className={styles.global}>
         <div className={styles.title}>
-          <h3>Des formules qui s'adabtent à vos besoins.</h3>
+          <h3>Des formules qui s&apos;adabtent à vos besoins.</h3>
           <p>
             Sans engagement et 0% de commission sur les réservations effectuées
             par votre clientèle

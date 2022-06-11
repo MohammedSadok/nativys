@@ -47,7 +47,7 @@ export default function ResetPassword() {
                 Réinitialiser le mot de passe de votre compte
               </h3>
               <h3>
-                Entrez l'adresse email associée à votre compte et nous vous
+                Entrez l&apos;adresse email associée à votre compte et nous vous
                 enverrons un lien pour réinitialiser votre mot de passe.
               </h3>
               <Input
@@ -76,9 +76,7 @@ export default function ResetPassword() {
                 Envoyer
               </button>
               <div className={styles.divmotdepasse}>
-                <a href="/" className={styles.motdepasse}>
-                  Je m'identifie
-                </a>
+                <a className={styles.motdepasse}>Je m&apos;identifie</a>
               </div>
             </div>
             <h3 className={styles.h3}>Créer un nouveau profil</h3>

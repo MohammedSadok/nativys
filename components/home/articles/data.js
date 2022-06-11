@@ -1,4 +1,4 @@
-export default [
+const DATA = [
   {
     id: 1,
     name: "ouiame.e",
@@ -70,3 +70,4 @@ export default [
     link: "https://mag.nativys.com/bien-etre/massage-colombien-retour-au-bon-vieux-temps.html",
   },
 ];
+export default DATA;

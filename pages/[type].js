@@ -84,7 +84,7 @@ export default function Coiffeurs({ type, def }) {
       return () => clearTimeout(timer);
     };
     fetchData();
-  }, []);
+  }, [def.value,type]);
   const { Option } = components;
   const CustomSelectOption = (props) => (
     <Option {...props}>

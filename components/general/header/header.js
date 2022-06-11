@@ -36,7 +36,9 @@ export default function Header() {
             </Link>
           </div>
           <div>
-            <a href="/InscrivezVous">ajouter votre établissement</a>
+            <Link href={"/inscrivez-etablissement"}>
+              <a>ajouter votre établissement</a>
+            </Link>
             <Link href={"/moncompte"}>
               <a>mon compte</a>
             </Link>

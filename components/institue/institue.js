@@ -42,6 +42,7 @@ export default function Institue(props) {
             let count = 0;
             return (
               <img
+                alt={item}
                 key={count}
                 src={`https://nativys.com/image-get/${item}`}
                 className={styles.image}
@@ -138,7 +139,7 @@ export default function Institue(props) {
           setHeight(height === 0 ? "auto" : 0);
         }}
       >
-        <p>Plus d'informations</p>
+        <p>Plus d&apos;informations</p>
         <svg
           style={style}
           xmlns="http://www.w3.org/2000/svg"

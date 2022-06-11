@@ -19,7 +19,7 @@ export default function Article(props) {
         </p>
       </div>
       <div className={styles.btnContainer}>
-        <a href={props.link} target="_blank">Voir la suite</a>
+        <a href={props.link} target="_blank" rel="noreferrer">Voir la suite</a>
       </div>
     </div>
   );

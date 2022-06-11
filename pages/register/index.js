@@ -106,7 +106,7 @@ export default function Register() {
         }}
       >
         <div className={styles.container}>
-          <h3>S'identifier avec un profil existant </h3>
+          <h3>S&apos;identifier avec un profil existant </h3>
           <div className={styles.login}>
             <p>Vous avez déjà utilisé Nativys ? </p>
             <Link href="/login">
@@ -264,7 +264,7 @@ export default function Register() {
                 onChange={handleOnChange}
               />
               <span className={styles.spnCheck}>
-                J'accepte les
+                J&apos;accepte les
                 <Link href="/cgu">
                   <a
                     style={{
