@@ -54,7 +54,7 @@
   position: absolute;
   padding: 2px;
   border: none;
-  top: 23%;
+  top: 80px;
   border-radius: 50%;
   background-color: transparent;
   transition-duration: 500ms;
@@ -64,10 +64,9 @@
   background-color: rgba(255, 255, 255, 0.363);
 }
 .btnLeft {
-  left: 90%;
+  left: 265px;
 }
 .btnRight {
-  left: 1%;
   transform: rotate(180deg);
 }
 .image {
@@ -171,5 +170,15 @@
   }
   .rdv {
     align-self: center;
+  }
+  .btnLeft,
+  .btnRight {
+    top: 30%;
+  }
+  .btnLeft {
+    left: 90%;
+  }
+  .btnRight {
+    left: 1%;
   }
 }

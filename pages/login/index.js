@@ -5,8 +5,10 @@ import Header from "../../components/general/header/header";
 import Footer from "../../components/general/footer/footer";
 import login from "../../services/login";
 import { useRouter } from "next/router";
+import Loading from "../../components/general/loading";
 import Link from "next/link";
 export default function Login() {
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
   const [inputs, setInputs] = useState({
     email: "",
@@ -27,8 +29,10 @@ export default function Login() {
       isValid = false;
     }
     if (isValid) {
+      setLoading(true);
       const res = await login(inputs);
       localStorage.setItem("user", JSON.stringify(res.data));
+      setLoading(false);
       router.push({
         pathname: "/moncompte",
       });
@@ -46,7 +50,18 @@ export default function Login() {
   return (
     <>
       <Header />
-      <main className={styles.main}>
+      {loading && (
+        <div className={styles.loading}>
+          <Loading />
+        </div>
+      )}
+      <main
+        className={styles.main}
+        style={{
+          opacity: loading ? 0.6 : 1,
+          pointerEvents: loading == 0 ? "auto" : "none",
+        }}
+      >
         <div className={styles.container}>
           <h3 className={styles.h3}>S'identifier avec un profil existant </h3>
 

@@ -12,6 +12,7 @@ import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import Star from "../components/star/star";
 import Footer from "../components/general/footer/footer";
 import Link from "next/link";
+import Loading from "../components/general/loading";
 const containerStyle = {
   width: "100%",
   height: "100%",
@@ -32,6 +33,7 @@ export async function getServerSideProps(context) {
 }
 export default function Coiffeurs({ type, def }) {
   const [nav, setNav] = useState(-1);
+  const [loading, setLoading] = useState(false);
   const [temp, setTemp] = useState(false);
   const [instituts, setInstituts] = useState([]);
   const [options, setOptions] = useState({
@@ -41,6 +43,7 @@ export default function Coiffeurs({ type, def }) {
   const [position, setPosition] = useState();
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       const resInst = await getInstitus({
         type_service: `${type}`,
         localite: "Fes",
@@ -68,18 +71,19 @@ export default function Coiffeurs({ type, def }) {
         arrPre.push({ value: item.name, label: item.name })
       );
       setOptions({ optionsCity: op, optionsFilter: arrPre });
+      setLoading(false);
+      setSelectedOption({
+        type_service: def.value,
+        localite: "Fes",
+        classement: "",
+        prix_moyen: "",
+      });
+      const timer = setTimeout(function () {
+        setTemp(true);
+      }, 1000);
+      return () => clearTimeout(timer);
     };
     fetchData();
-    setSelectedOption({
-      type_service: def.value,
-      localite: "Fes",
-      classement: "",
-      prix_moyen: "",
-    });
-    const timer = setTimeout(function () {
-      setTemp(true);
-    }, 1000);
-    return () => clearTimeout(timer);
   }, []);
   const { Option } = components;
   const CustomSelectOption = (props) => (
@@ -183,6 +187,7 @@ export default function Coiffeurs({ type, def }) {
   };
 
   async function loadData() {
+    setLoading(true);
     const data = await getInstitus({
       type_service: selectedOption.type_service,
       localite: selectedOption.localite,
@@ -195,15 +200,20 @@ export default function Coiffeurs({ type, def }) {
       lat: data.data.instituts[0].latitude,
       lng: data.data.instituts[0].longitude,
     });
+    setLoading(false);
   }
   return (
     <div className={styles.section} id="main">
       <header className={styles.header}>
         <div className={styles.headerLogo}>
-          <a href="#">Qui somme-nous</a>
+          <Link href="/a_propos">
+            <a target="_blanc">Qui somme-nous</a>
+          </Link>
           <Logo />
           <div>
-            <a href="#">Inscrivez votre établissement</a>
+            <Link href="/inscrivez-etablissement">
+              <a target="_blanc">Inscrivez votre établissement</a>
+            </Link>
             <a
               // href="https://www.facebook.com/nativysofficiel"
               target="_blank"
@@ -262,8 +272,13 @@ export default function Coiffeurs({ type, def }) {
         </h4>
       </nav>
       <main className={styles.main}>
-        <h1 style={{ display: nav == false ? "none" : "block" }}>Pensez à prendre votre rendez-vous beauté en ligne</h1>
-        <div className={styles.filter} style={{ display: nav == false ? "none" : "flex" }}>
+        <h1 style={{ display: nav == false ? "none" : "block" }}>
+          Pensez à prendre votre rendez-vous beauté en ligne
+        </h1>
+        <div
+          className={styles.filter}
+          style={{ display: nav == false ? "none" : "flex" }}
+        >
           <div className={styles.inputContainer}>
             <div className={styles.boxIcon}>
               <svg
@@ -347,22 +362,28 @@ export default function Coiffeurs({ type, def }) {
           </button>
         </div>
         <div className={styles.body}>
-          <section
-            className={styles.sectionContainer}
-            style={{ display: nav == false ? "none" : "block" }}
-          >
-            {instituts.length > 0 &&
-              instituts?.map((elem) => {
-                return (
-                  <Institue
-                    key={elem.id}
-                    data={elem}
-                    handleMap={handleMap}
-                    pos={position}
-                  />
-                );
-              })}
-          </section>
+          {loading ? (
+            <div className={styles.loading}>
+              <Loading />
+            </div>
+          ) : (
+            <section
+              className={styles.sectionContainer}
+              style={{ display: nav == false ? "none" : "block" }}
+            >
+              {instituts.length > 0 &&
+                instituts?.map((elem) => {
+                  return (
+                    <Institue
+                      key={elem.id}
+                      data={elem}
+                      handleMap={handleMap}
+                      pos={position}
+                    />
+                  );
+                })}
+            </section>
+          )}
           <aside
             className={styles.aside}
             style={{ display: nav == true ? "none" : "block" }}

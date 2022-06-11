@@ -11,113 +11,12 @@
   display: flex;
 }
 
-.logo {
-  text-align: center;
-  margin: 10px 0 18px;
-}
-.icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  width: 8%;
-  height: 65px;
-  margin-top: 15px;
-  padding-left: 20px;
-}
 .main {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-}
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #f9f9f9;
-  overflow-x: hidden;
-  transition: 0.3s;
-}
-
-.sidebar a {
-  padding: 15px 0px 15px 26px;
-  text-decoration: none;
-  color: black;
-  display: block;
-  transition: 0.3s;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-family: "Galyon-Regular";
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  width: 100%;
-}
-
-.sidebar > a {
-  border-bottom: 1px solid #d3d3d3;
-}
-
-.sidebar a:hover {
-  opacity: 0.7;
-}
-
-.closebtn {
-  color: #818181;
-  font-size: 36px;
-}
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-#main {
-  transition: margin-left 0.3s;
-  padding: 16px;
-}
-.listContainer {
-  height: 90%;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.header2 {
-  width: 100%;
-  display: flex;
-  background-color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  padding: 11px;
-  z-index: 1;
-  border-bottom: 1px solid #d3d3d3;
-  position: fixed;
-}
-.header2 button {
-  outline: 0;
-  border: none;
-  background-color: #fff;
-}
-.closebtn {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 12px;
 }
 .container p {
   margin: 10px 0px;
@@ -174,6 +73,10 @@
   height: 40px;
   margin: 15px 0;
   border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.6;
 }
 .btnDisabled {
   opacity: 0.7;
@@ -201,4 +104,10 @@
 .inputCheck {
   display: flex;
   align-items: center;
+}
+.loading {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  right: 40%;
 }

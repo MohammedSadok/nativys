@@ -35,6 +35,7 @@
   background-color: #f9f9f9;
   padding: 2% 6%;
   overflow-x: hidden;
+  min-height: 82vh;
 }
 .section > h4 {
   margin: 0px 0px 15px;
@@ -250,4 +251,38 @@
   position: absolute;
   left: 30%;
   top: 40%;
+  z-index: 2;
+}
+.modal {
+  pointer-events: auto;
+  background-color: white;
+  padding: 20px;
+  width: 600px;
+  height: 180px;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  border-radius: 0.3rem;
+  z-index: 1;
+  -webkit-box-shadow: 5px -1px 15px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px -1px 15px 8px rgba(0, 0, 0, 0.15);
+}
+.modal > div > button {
+  cursor: pointer;
+  background: #d8c54e;
+  border: 1px solid #d8c54e;
+  border-radius: 4px;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  margin: 5px;
+  font-size: 16px;
+}
+.modal > div > button:hover {
+  opacity: 0.6;
+}
+.modal > p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
 }

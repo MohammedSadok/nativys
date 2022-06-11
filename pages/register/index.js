@@ -8,6 +8,7 @@ import Input from "../../components/general/input/Input";
 import PhoneInput from "react-phone-input-2";
 import NewAccount from "../../services/newAccount";
 import Link from "next/link";
+import Loading from "../../components/general/loading";
 export default function Register() {
   const [inputs, setInputs] = useState({
     prenom: "",
@@ -21,6 +22,7 @@ export default function Register() {
   });
   const router = useRouter();
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
   const [textError, setTextError] = useState("");
   const [isChecked, setIsChecked] = useState(false);
   const handleOnChange = () => {
@@ -70,8 +72,10 @@ export default function Register() {
       isValid = false;
     }
     if (isValid) {
+      setLoading(true);
       const res = await NewAccount(inputs);
       setTextError(res.errortext);
+      setLoading(false);
       if (!res.errortext) {
         router.push("../check");
       }
@@ -87,9 +91,20 @@ export default function Register() {
     setErrors((prevState) => ({ ...prevState, [input]: error }));
   };
   return (
-    <div className={styles.section} id="main">
+    <div className={styles.section}>
       <Header />
-      <main className={styles.main}>
+      {loading && (
+        <div className={styles.loading}>
+          <Loading />
+        </div>
+      )}
+      <main
+        className={styles.main}
+        style={{
+          opacity: loading ? 0.6 : 1,
+          pointerEvents: loading == 0 ? "auto" : "none",
+        }}
+      >
         <div className={styles.container}>
           <h3>S'identifier avec un profil existant </h3>
           <div className={styles.login}>
@@ -257,6 +272,7 @@ export default function Register() {
                       textDecoration: "underline",
                       margin: "0 3px",
                     }}
+                    target="_blank"
                   >
                     CGU
                   </a>

@@ -16,6 +16,7 @@ export default function Articles() {
         type={elem.type}
         desc={elem.desc}
         image={elem.image}
+        link={elem.link}
       />
     );
   });

@@ -139,6 +139,13 @@
   padding-bottom: 20px;
   display: flex;
 }
+.loading{
+  margin-top: 10px;
+  width: 70%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
 .sectionContainer {
   width: 70%;
 }

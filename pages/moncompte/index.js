@@ -25,7 +25,7 @@ const monCompte = () => {
   const [pwd, setPwd] = useState(false);
   const [errors, setErrors] = useState({});
   const [user, setUser] = useState();
-  const [loading, setLoading] = useState(false);
+  const [modal, setModal] = useState({ loading: false, mod: null });
   useEffect(() => {
     const fetchData = async () => {
       const saved = localStorage.getItem("user");
@@ -99,8 +99,12 @@ const monCompte = () => {
       pathname: "/login",
     });
   };
-  async function cancelRDV(id) {
-    setLoading(true)
+  async function cancelRDV() {
+    const id = modal.mod;
+    setModal({
+      mod: 0,
+      loading: true,
+    });
     const res = await deleteRDV(id, user.access_token);
     if (res.data.message == "success") {
       let arr = [];
@@ -114,7 +118,7 @@ const monCompte = () => {
         rdv_venir: arr,
       }));
     }
-    setLoading(false);
+    setModal({ loading: false, mod: 0 });
   }
   return (
     <>
@@ -140,10 +144,31 @@ const monCompte = () => {
         </nav>
       </header>
       {nav && (
-        <main className={styles.main}>
-          {loading && (
+        <main
+          className={styles.main}
+          style={{ pointerEvents: modal.mod == 0 ? "auto" : "none" }}
+        >
+          {modal.loading && (
             <div className={styles.loading}>
               <Loading />
+            </div>
+          )}
+          {modal.mod && (
+            <div className={styles.modal}>
+              <p>Etes vous sur de vouloir annuler votre rendez-vous </p>
+              <div>
+                <button onClick={() => cancelRDV()}>Confirmer</button>
+                <button
+                  onClick={() =>
+                    setModal((prev) => ({
+                      ...prev,
+                      mod: 0,
+                    }))
+                  }
+                >
+                  Annuler
+                </button>
+              </div>
             </div>
           )}
           <section className={styles.section}>
@@ -166,7 +191,9 @@ const monCompte = () => {
                     name={item.prestations[0].name}
                     duration={item.prestations[0].duree}
                     price={item.prestations[0].prix}
-                    handleClick={() => cancelRDV(item.rdv_id)}
+                    handleClick={() =>
+                      setModal({ loading: false, mod: item.rdv_id })
+                    }
                   />
                 );
               })}

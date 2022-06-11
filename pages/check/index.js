@@ -6,13 +6,17 @@ import Input from "../../components/general/input/Input";
 import Link from "next/link";
 import "react-phone-input-2/lib/style.css";
 import checkCode from "../../services/checkCode";
+import Loading from "../../components/general/loading";
+import { useRouter } from "next/router";
 export default function Check() {
+  const router = useRouter();
   const [inputs, setInputs] = useState({
     email: "",
     code: "",
   });
   const [errors, setErrors] = useState({});
   const [textError, setTextError] = useState("");
+  const [loading, setLoading] = useState(false);
   const validate = async () => {
     let isValid = true;
     if (!inputs.email) {
@@ -27,11 +31,15 @@ export default function Check() {
       isValid = false;
     }
     if (isValid) {
+      setLoading(true);
       const res = await checkCode(inputs);
       setTextError(res.errortext);
       if (!res.errortext) {
-        console.log("hello");
+        if (!res.errortext) {
+          router.push("../login");
+        }
       }
+      setLoading(false);
     }
   };
   function handleOnchange(event) {
@@ -46,7 +54,18 @@ export default function Check() {
   return (
     <div className={styles.section} id="main">
       <Header />
-      <main className={styles.main}>
+      {loading && (
+        <div className={styles.loading}>
+          <Loading />
+        </div>
+      )}
+      <main
+        className={styles.main}
+        style={{
+          opacity: loading ? 0.6 : 1,
+          pointerEvents: loading == 0 ? "auto" : "none",
+        }}
+      >
         <div className={styles.container}>
           <h3>Validation compte NATIVYS</h3>
           <div className={styles.form}>
